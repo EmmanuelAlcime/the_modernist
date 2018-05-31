@@ -3,10 +3,35 @@
    height: 42rem;
    background-color: transparent;
    position: relative;
+  
+  @include respond($phone){
+      height: auto;
+  }
+  
+  @include respond($tablet-portrait){
+      height: auto;
+  }
+  
+  @include respond($tablet-landscape){
+       height: auto;
+  }
 
    .container{
     display: flex;
     flex-direction: row;
+
+   @include respond($phone){
+       display: flex;
+       flex-direction: column;
+    }
+    @include respond($tablet-portrait){
+      display: flex;
+      flex-direction: column;
+    }
+    @include respond($tablet-landscape){
+      display: flex;
+      flex-direction: column;
+     }
    }
 
    &--tile{
@@ -21,7 +46,24 @@
         background-color: green;
         color: #fff;
       }
+    
+    @include respond($phone){
+      width: 100%;
+      height: 20rem;
+       margin: 30px 9px;
+    }
+    @include respond($tablet-portrait){
+       width: 100%;
+       height: 20rem;
+       margin: 30px 9px;
+    }
+    @include respond($tablet-landscape){
+       width: 100%;
+       height: 20rem;
+       margin: 30px 9px;
+     }
    }
+
    &--tile__icon{
        position: relative;
        height: 7em;
@@ -29,8 +71,44 @@
       font-size: 83px;
       position: absolute;
       left: 67px;
+
+      @include respond($phone){
+        font-size: 103px;
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+       }
+
+      @include respond($tablet-portrait){
+         font-size: 103px;
+         position: absolute;
+         top: 52%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+       }
+       
+      @include respond($tablet-landscape){
+          font-size: 103px;
+          position: absolute;
+          top: 52%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+       }
+     }
+
+    @include respond($phone){
+      height: 9em;
+    }
+    @include respond($tablet-portrait){
+      height: 9em;
+    }
+    @include respond($tablet-landscape){
+      height: 9em;
      }
    }
+
+
    &--tile__header{
      text-align: center;
      font-family: $roboto-font;
