@@ -1,0 +1,31 @@
+{
+  "name": "the_modernist",
+  "version": "1.0.0",
+  "description": "I create this project to showcase my ability to turn psd to websites",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "npm-sass": "^2.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmanuelAlcime/the_modernist.git"
+  },
+  "keywords": [
+    "psd",
+    "html",
+    "css"
+  ],
+  "author": "Emmanuel Alcime",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmmanuelAlcime/the_modernist/issues"
+  },
+  "homepage": "https://github.com/EmmanuelAlcime/the_modernist#readme"
+}
