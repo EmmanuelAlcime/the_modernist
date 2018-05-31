@@ -1,0 +1,94 @@
+.header{
+  border-top: 4px solid green;
+  width: 100%;
+  height:  5rem;
+  background-color: $dark-gry;
+  opacity: .8;
+  @include respond($phone){
+     height: auto;
+    }
+  
+  .container{
+    display: flex;
+    flex-direction: row;
+    @include respond($phone){
+     display: flex;
+    flex-direction:column;
+    }
+  }
+
+  &--logo{
+    width: 30%;
+    height: 5rem;
+    font-size: 18px;
+    font-family:$lato-font;
+    margin-top: 0.2%;
+    &__text{
+        color: #fff;
+        text-shadow: 1px 1px 3px #000;
+        @include respond($phone){
+          text-align: center;
+        }  
+    }
+    &__byline{
+      color: #fff;
+      text-shadow: 1px 1px 3px #000;
+      font-size: 14px;
+
+      @include respond($phone){
+          text-align: center;
+          display: inline-block;
+          margin-left: 27%;
+        }  
+    }
+
+     @include respond($phone){
+      width: 100%;
+      height: 5rem; 
+      font-size: 16px;
+     }
+  }
+  &--links{
+    width: 70%;
+    height: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5%;
+    @include respond($phone){
+     width: 100%;
+     display: flex;
+     flex-direction:column;
+    }
+
+    li{
+        width: 20%;
+        height: 3rem;
+        @include respond($phone){
+           width: 100%;
+           height: 3rem;
+         }
+      a{
+         width: 100%;
+         height: 3rem;
+         line-height: 44px;
+         color: $color-white;
+         text-decoration: none;
+         text-transform: uppercase;
+         text-align: center;
+         display: block;
+         padding:1%;
+         font-family: $lato-font;
+         font-weight: 300;
+         text-shadow: 1px 1px 3px #000;
+
+      @include respond($phone){
+          border-bottom: thin solid $color-grey-dark;
+          &:hover,&:active{
+             background: #222;
+          }
+        }  
+      }
+    } 
+  }
+}

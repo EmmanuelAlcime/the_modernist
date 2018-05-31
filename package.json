@@ -8,10 +8,10 @@
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {
-    "npm-sass": "^2.2.3"
+    "node-sass": "^4.9.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node-sass sass/_main.scss css/main.css"
   },
   "repository": {
     "type": "git",
