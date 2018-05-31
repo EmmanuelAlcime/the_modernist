@@ -1,0 +1,132 @@
+.footer{
+  width: 100%;
+  height: 36rem;
+  background: #222;
+  margin-top: 10%;
+  .container{
+     display: flex;
+    flex-direction: row;
+  }
+
+  &--cols{
+    width: 25%;
+    padding: 1px;
+
+
+    &__header{
+      color:#fff;
+      margin-top: 16%;
+      margin-bottom: 13%;
+      font-family: $lato-font;
+      font-weight: 300;
+
+    }
+
+    &__blog-post{
+      color: #FFF;
+      a{
+        display: block;
+        color: green;
+        text-decoration: none;
+        margin-top: 5%;
+      }
+    }
+    &__blog-post__title{
+      display: block;
+      color: green;
+      margin-bottom: 5%;
+      font-weight: bold;
+      font-family: $lato-font;
+
+    }
+    &__blog-post__author{
+      margin-top: 2%;
+      margin-bottom: 4%;
+      font-weight: 300;
+      display: block;
+      font-family: $lato-font;
+    }
+    &__blog-post__date{
+      display: block;
+      margin-top: 4%;
+      margin-bottom: 2%;
+      color: $color-white;
+      font-weight: 300;
+    }
+    &__blog-post__text-body{
+      font-weight: 300;
+      font-family: $lato-font;
+    }
+
+    &__links{
+      list-style-type: none;
+      width: 100%;
+      padding-right: 8%;
+      li{
+        a{
+            display: block;
+            width: 100%;
+            height: 2.5rem;
+            border-bottom: thin solid #444;
+            color: green;
+            text-decoration: none;
+            line-height: 46px;
+        }
+      }
+    }
+    &__latest_tweets{
+      color: $color-white;
+      font-family: $roboto-font;
+      font-weight: 300;
+      line-height: 1.5em;
+    }
+    &__latest_tweets:not(.top--tweet){
+       margin-top: 9%;
+    }
+
+    &__forms{
+          width: 100%;
+         input[type="email"]{
+           margin-top: 3%;
+           margin-bottom: 3%;
+         }
+         
+         input[type="text"]{
+           margin-top: 2%;
+         }
+
+        input[type="text"], input[type="email"], textarea{
+             width: 100%;
+             border: none;
+             background-color:#181818;
+             padding: 3% 4%; 
+             @include border-radius(4px);
+        }
+        textarea{
+          margin-top: 3%;
+        }
+        button{
+           color:$color-white;
+           font-weight: bold;
+           background-color: green;
+           padding: 3% 5%;
+           margin-top: 4%;
+           cursor: pointer;
+           @include border-radius(4px);
+        }
+    }
+  }// cols 
+
+  &--bottom{
+      margin-top: 3%;
+      border-top:thin solid #181818;
+      color: #fff;
+    .wrapper{
+      p{
+          font-weight: 300;
+          font-family: $roboto-font;
+          line-height: 69px;
+      }
+    }
+  }
+}
