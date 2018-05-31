@@ -160,20 +160,20 @@
          @include respond($phone){
           border-bottom: thin solid $color-grey-dark;
           &:hover,&:active{
-             background: #222;
+             background: green;
             }
            }
          @include respond($tablet-portrait){
           border-bottom: thin solid $color-grey-dark;
           &:hover,&:active{
-             background: #222;
+             background: green;
              transition: all ease-in 0.4s;
             }
           }  
          @include respond($tablet-landscape){
           border-bottom: thin solid $color-grey-dark;
           &:hover,&:active{
-             background: #222;
+             background: green;
           }
         }  
 
