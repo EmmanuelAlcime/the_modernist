@@ -367,6 +367,15 @@ a.active {
 .latest-work {
   width: 100%;
   height: 42em; }
+  @media only screen and (max-width: 480px) {
+    .latest-work {
+      height: auto; } }
+  @media only screen and (max-width: 767px) {
+    .latest-work {
+      height: auto; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .latest-work {
+      height: auto; } }
   .latest-work__horizan {
     width: 100%;
     text-align: center;
@@ -393,18 +402,63 @@ a.active {
     .latest-work__images:hover {
       transition: all ease .4s;
       border: 7px solid green; }
+    @media only screen and (max-width: 480px) {
+      .latest-work__images {
+        width: 100%; } }
+    @media only screen and (max-width: 767px) {
+      .latest-work__images {
+        width: 100%; } }
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      .latest-work__images {
+        width: 100%; } }
 
 .footer {
   width: 100%;
   height: 36rem;
   background: #222;
   margin-top: 10%; }
+  @media only screen and (max-width: 480px) {
+    .footer {
+      height: auto; } }
+  @media only screen and (max-width: 767px) {
+    .footer {
+      height: auto; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .footer {
+      height: auto; } }
   .footer .container {
     display: flex;
     flex-direction: row; }
+    @media only screen and (max-width: 480px) {
+      .footer .container {
+        display: flex;
+        flex-direction: column;
+        transition: all ease .4s; } }
+    @media only screen and (max-width: 767px) {
+      .footer .container {
+        display: flex;
+        flex-direction: column;
+        transition: all ease .4s; } }
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      .footer .container {
+        display: flex;
+        flex-direction: column;
+        transition: all ease .4s; } }
   .footer--cols {
     width: 25%;
     padding: 1px; }
+    @media only screen and (max-width: 480px) {
+      .footer--cols {
+        width: 100%;
+        padding: 1px; } }
+    @media only screen and (max-width: 767px) {
+      .footer--cols {
+        width: 100%;
+        padding: 1px; } }
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      .footer--cols {
+        width: 100%;
+        padding: 1px; } }
     .footer--cols__header {
       color: #fff;
       margin-top: 16%;

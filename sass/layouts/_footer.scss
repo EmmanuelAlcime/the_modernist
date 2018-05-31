@@ -3,15 +3,58 @@
   height: 36rem;
   background: #222;
   margin-top: 10%;
+
+   @include respond($phone){
+      height: auto;
+    }
+
+    @include respond($tablet-portrait){
+      height: auto;
+    }
+    
+    @include respond($tablet-landscape){
+      height: auto;
+    }
+
   .container{
      display: flex;
     flex-direction: row;
-  }
+    
+    @include respond($phone){
+      display: flex;
+      flex-direction: column;
+      transition: all ease .4s;
+    }
+    @include respond($tablet-portrait){
+      display: flex;
+      flex-direction: column;
+      transition: all ease .4s;
+    }
+    
+    @include respond($tablet-landscape){
+      display: flex;
+      flex-direction: column;
+      transition: all ease .4s;
+    }
+
+  }///
 
   &--cols{
     width: 25%;
     padding: 1px;
 
+    @include respond($phone){
+      width: 100%;
+      padding: 1px;
+    }
+    @include respond($tablet-portrait){
+      width: 100%;
+      padding: 1px;
+    }
+    @include respond($tablet-landscape){
+     width: 100%;
+      padding: 1px;
+    }
 
     &__header{
       color:#fff;
