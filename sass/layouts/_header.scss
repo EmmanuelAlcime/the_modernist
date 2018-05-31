@@ -1,34 +1,56 @@
 .header{
   border-top: 4px solid green;
   width: 100%;
-  height:  5rem;
+  height:  8rem;
   background-color: $dark-gry;
-  opacity: .8;
+ /*  opacity: .8; */
   @include respond($phone){
      height: auto;
     }
+  @include respond($tablet-portrait){
+     height: auto;
+  }
+  @include respond($tablet-landscape){
+     height: auto;
+  }
   
   .container{
     display: flex;
     flex-direction: row;
     @include respond($phone){
      display: flex;
-    flex-direction:column;
+     flex-direction:column;
     }
+    @include respond($tablet-portrait){
+      display: flex;
+      flex-direction:column;
+    }
+    @include respond($tablet-landscape){
+      display: flex;
+      flex-direction:column;
+    }
+
   }
 
   &--logo{
-    width: 30%;
+    width: 34%;
     height: 5rem;
     font-size: 18px;
     font-family:$lato-font;
-    margin-top: 0.2%;
+    margin-top: 2.2%;
     &__text{
         color: #fff;
         text-shadow: 1px 1px 3px #000;
         @include respond($phone){
           text-align: center;
         }  
+        @include respond($tablet-portrait){
+           text-align: center;
+        }
+        @include respond($tablet-landscape){
+           text-align: center;
+         }
+  
     }
     &__byline{
       color: #fff;
@@ -39,7 +61,17 @@
           text-align: center;
           display: inline-block;
           margin-left: 27%;
-        }  
+        } 
+        @include respond($tablet-portrait){
+          text-align: center;
+          display: inline-block;
+          margin-left: 27%;
+        }
+        @include respond($tablet-landscape){
+          text-align: center;
+          display: inline-block;
+          margin-left: 27%;
+         } 
     }
 
      @include respond($phone){
@@ -47,32 +79,69 @@
       height: 5rem; 
       font-size: 16px;
      }
+     @include respond($tablet-portrait){
+       width: 100%;
+       height: 5rem; 
+       font-size: 16px;
+      }
+     @include respond($tablet-landscape){
+      width: 100%;
+      height: 5rem; 
+      font-size: 16px;
+    } 
+
   }
   &--links{
-    width: 70%;
+    width: 85%;
     height: auto;
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    margin-top: 0.5%;
+    margin-top: 1.8%;
     @include respond($phone){
      width: 100%;
      display: flex;
      flex-direction:column;
     }
 
+    @include respond($tablet-portrait){
+      width: 100%;
+      display: flex;
+      flex-direction:column;
+    }
+
+    @include respond($tablet-landscape){
+       width: 100%;
+       display: flex;
+       flex-direction:column;
+    } 
+
+
     li{
         width: 20%;
         height: 3rem;
-        @include respond($phone){
+        
+       @include respond($phone){
            width: 100%;
            height: 3rem;
          }
-      a{
+
+        @include respond($tablet-portrait){
+           width: 100%;
+           height: 3rem;
+         }
+
+        @include respond($tablet-landscape){
+           width: 100%;
+           height: 3rem;
+         } 
+
+        a{
+         z-index: 1;
          width: 100%;
          height: 3rem;
          line-height: 44px;
-         color: $color-white;
+         color: #FFF;
          text-decoration: none;
          text-transform: uppercase;
          text-align: center;
@@ -81,14 +150,33 @@
          font-family: $lato-font;
          font-weight: 300;
          text-shadow: 1px 1px 3px #000;
-
-      @include respond($phone){
+         
+         @include respond($phone){
+          border-bottom: thin solid $color-grey-dark;
+          &:hover,&:active{
+             background: #222;
+            }
+           }
+         @include respond($tablet-portrait){
+          border-bottom: thin solid $color-grey-dark;
+          &:hover,&:active{
+             background: #222;
+            }
+          }  
+         @include respond($tablet-landscape){
           border-bottom: thin solid $color-grey-dark;
           &:hover,&:active{
              background: #222;
           }
         }  
+
       }
     } 
   }
+}
+
+a.active{
+  background-color: green;
+  color: $text-color;
+  @include border-radius(5px); 
 }
