@@ -1,0 +1,45 @@
+.services{
+   width:  100%;
+   height: 42rem;
+   background-color: transparent;
+   position: relative;
+
+   .container{
+    display: flex;
+    flex-direction: row;
+   }
+
+   &--tile{
+      width: 25%;
+      height: 22rem;
+      background-color: $color-white;
+      margin: 66px 9px;
+      padding: 2.5%;
+      cursor: pointer;
+      &:hover{
+        transition: all ease .4s;
+        background-color: green;
+        color: #fff;
+      }
+   }
+   &--tile__icon{
+       position: relative;
+       height: 7em;
+    i{
+      font-size: 83px;
+      position: absolute;
+      left: 67px;
+     }
+   }
+   &--tile__header{
+     text-align: center;
+     font-family: $roboto-font;
+     font-size: 41px;
+     text-transform: uppercase;
+   }
+   &--tile__text{
+    text-align: center;
+    font-family: $lato-font;
+   }
+
+}

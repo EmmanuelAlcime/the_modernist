@@ -20,14 +20,17 @@
     @include respond($phone){
      display: flex;
      flex-direction:column;
+     transition: all ease-in 0.4s;
     }
     @include respond($tablet-portrait){
       display: flex;
       flex-direction:column;
+      transition: all ease-in 0.4s;
     }
     @include respond($tablet-landscape){
       display: flex;
       flex-direction:column;
+      transition: all ease-in 0.4s;
     }
 
   }
@@ -102,18 +105,21 @@
      width: 100%;
      display: flex;
      flex-direction:column;
+     transition: all ease-in 0.4s;
     }
 
     @include respond($tablet-portrait){
       width: 100%;
       display: flex;
       flex-direction:column;
+      transition: all ease-in 0.4s;
     }
 
     @include respond($tablet-landscape){
        width: 100%;
        display: flex;
        flex-direction:column;
+       transition: all ease-in 0.4s;
     } 
 
 
@@ -161,6 +167,7 @@
           border-bottom: thin solid $color-grey-dark;
           &:hover,&:active{
              background: #222;
+             transition: all ease-in 0.4s;
             }
           }  
          @include respond($tablet-landscape){

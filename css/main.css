@@ -112,15 +112,18 @@ body {
     @media only screen and (max-width: 480px) {
       .header .container {
         display: flex;
-        flex-direction: column; } }
+        flex-direction: column;
+        transition: all ease-in 0.4s; } }
     @media only screen and (max-width: 767px) {
       .header .container {
         display: flex;
-        flex-direction: column; } }
+        flex-direction: column;
+        transition: all ease-in 0.4s; } }
     @media only screen and (min-width: 768px) and (max-width: 979px) {
       .header .container {
         display: flex;
-        flex-direction: column; } }
+        flex-direction: column;
+        transition: all ease-in 0.4s; } }
   .header--logo {
     width: 34%;
     height: 5rem;
@@ -184,17 +187,20 @@ body {
       .header--links {
         width: 100%;
         display: flex;
-        flex-direction: column; } }
+        flex-direction: column;
+        transition: all ease-in 0.4s; } }
     @media only screen and (max-width: 767px) {
       .header--links {
         width: 100%;
         display: flex;
-        flex-direction: column; } }
+        flex-direction: column;
+        transition: all ease-in 0.4s; } }
     @media only screen and (min-width: 768px) and (max-width: 979px) {
       .header--links {
         width: 100%;
         display: flex;
-        flex-direction: column; } }
+        flex-direction: column;
+        transition: all ease-in 0.4s; } }
     .header--links li {
       width: 20%;
       height: 3rem; }
@@ -233,7 +239,8 @@ body {
           .header--links li a {
             border-bottom: thin solid #777; }
             .header--links li a:hover, .header--links li a:active {
-              background: #222; } }
+              background: #222;
+              transition: all ease-in 0.4s; } }
         @media only screen and (min-width: 768px) and (max-width: 979px) {
           .header--links li a {
             border-bottom: thin solid #777; }
@@ -250,5 +257,39 @@ a.active {
 
 .hero {
   background-color: rgba(51, 51, 51, 0.8);
-  height: 100vh;
-  opacity: .8; }
+  height: 100vh; }
+
+.services {
+  width: 100%;
+  height: 42rem;
+  background-color: transparent;
+  position: relative; }
+  .services .container {
+    display: flex;
+    flex-direction: row; }
+  .services--tile {
+    width: 25%;
+    height: 22rem;
+    background-color: #FFF;
+    margin: 66px 9px;
+    padding: 2.5%;
+    cursor: pointer; }
+    .services--tile:hover {
+      transition: all ease .4s;
+      background-color: green;
+      color: #fff; }
+  .services--tile__icon {
+    position: relative;
+    height: 7em; }
+    .services--tile__icon i {
+      font-size: 83px;
+      position: absolute;
+      left: 67px; }
+  .services--tile__header {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 41px;
+    text-transform: uppercase; }
+  .services--tile__text {
+    text-align: center;
+    font-family: "Lato", sans-serif; }
