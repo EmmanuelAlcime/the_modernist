@@ -19,6 +19,6 @@
   when creating a project I [Emmanuel Alcime] employ best practice methods to ensure to entire project is completed smoothly.
 
   > NPM - Node Package Manager
-  > Agile Methodology 
-  > Test Driving Development
-  
+  > Agile - Methodology 
+  > Test - Driving Development
+
