@@ -15,7 +15,7 @@
          <link rel="stylesheet" type="text/css" href="css/basic-fonts.css">
          <!-- Place favicon.ico in the root directory -->
  
-         <link type="text/css" rel="stylesheet" href="node_module/normalize.css">
+         <link type="text/html" rel="stylesheet" href="node_module/normalize.css">
          <link rel="stylesheet" href="css/main.css">
      </head>
      <body>
@@ -43,23 +43,67 @@
             </div>
           </header>
           <main class="site-body">
-              <section class="hero">
+              <section class="hero hide">
                  <div class="container">
                       <div class="hero--slider">
                           <a id="previous" href="#" class="hero--slider__navigation--previous">&laquo;</a><!-- prev navigation -->
+                          <div class="hero--slider__sliderShow" name="mainCaption" id="sliderContainer">
+                          </div>
+                          <div class="hero--slider__sliderShow">
+                              <div class="hero--slider__caption" >
+                                <h1 class="hero--slider__caption-header">
+                                  Cursus penati
+                                  Succum nulla
+                                </h1>
+                                <p class="hero--slider__caption-body">when an unknown printer took a galley of type and scrambled it to make a type specimen book. When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+                                </p>
+                                <a class="hero--slider__caption-link" href="#">Read More Here &raquo;
+                                </a>
+                            </div><!-- slider content one -->
+                          
+                             <div class="hero--slider__image">
+                              <img src="images/with_hat_on_looking_out_of_window.jpg" alt="with_hat_on_looking_out_of_window">
+                            </div>
+                          
+                          </div><!-- slider -->
+
+
+                          
+                        <div class="hero--slider__sliderShow">
                           <div class="hero--slider__caption">
                               <h1 class="hero--slider__caption-header">
-                                Cursus penati
-                                Succum nulla
+                               De Finibus Bonorum et Malorum
                               </h1>
                               <p class="hero--slider__caption-body">when an unknown printer took a galley of type and scrambled it to make a type specimen book. When an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
                               </p>
-                              <a class="hero--slider__caption-link" href="#">Read More Here &raquo;</a>
-                          </div>
+                              <a class="hero--slider__caption-link" href="#">Read More Here &raquo;
+                              </a>
+                          </div><!-- slider content one -->
                           <div class="hero--slider__image">
-                            <img src="images/with_hat_on_looking_out_of_window.jpg" alt="with_hat_on_looking_out_of_window">
+                            <img src="images/person-731165_960_720_1.jpg" alt="with_hat_on_looking_out_of_window">
                           </div>
+                         </div><!-- sliderShow -->
+
+                        
+
+                        <div class="hero--slider__sliderShow">
+                          <div class="hero--slider__caption">
+                              <h1 class="hero--slider__caption-header">
+                                Sed ut perspiciatis unde omnis 
+                              </h1>
+                              <p class="hero--slider__caption-body">when an unknown printer took a galley of type and scrambled it to make a type specimen book. When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+                              </p>
+                              <a class="hero--slider__caption-link" href="#">Read More Here &raquo;
+                              </a>
+                          </div><!-- slider content one -->
+                           <div class="hero--slider__image">
+                            <img src="images/womanlookingoutwindow.jpg" alt="with_hat_on_looking_out_of_window">
+                          </div>
+                          </div><!-- sliderShow -->
+                         
                           <a id="next" href="#" class="hero--slider__navigation--next">&raquo;</a><!-- next navigation -->
                       </div><!-- Slider End -->
                  </div>
@@ -171,6 +215,7 @@
          <script>window.jQuery || document.write('<script src="node_modules/dist/jquery.min.js"><\/script>')</script>
         <!--  <script src="js/plugins.js"></script> -->
          <script src="scripts/main.js"></script>
+           <script src="scripts/nav.js"></script>
  
          <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
      </body>

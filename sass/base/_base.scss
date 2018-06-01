@@ -1,0 +1,67 @@
+*{
+  border:0;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  
+   font-size: 16px;
+   background: $dark-gry;
+   background-image: url('../images/child_sketch_by_narftarts.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+.container{
+   width: 88%;
+   margin: 0 auto;
+}
+.wrapper{
+   width: 88%;
+   margin: 0 auto;
+}
+
+.fixed{
+ z-index: 1;
+ position: fixed;
+ top: 0;
+ transition: all ease .4s;
+ width: 100% !important;
+ height: 7em !important;
+ background-color: #333 !important;
+ border: thin solid #222;
+-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+ .animated{
+  -webkit-animation:  moveInRight  8s ease-in 8s  infinite reverse both running;;
+  -moz-animation:  moveInRight 8s ease-in 8s  infinite reverse both running;;
+  -ms-animation:  moveInRight 8s ease-in 8s  infinite reverse both running;;
+  -o-animation:  moveInRight  8s ease-in 8s  infinite reverse both running;;
+  animation:    moveInRight 8s ease-in 8s  infinite reverse both running;;
+ }
+
+
+
+
+
+ .hide{
+   @include respond($phone){
+      display: none;
+    }
+
+    @include respond($tablet-portrait){
+     display: none;
+    }
+    
+    @include respond($tablet-landscape){
+     display: none;
+    }
+ }
+
+
