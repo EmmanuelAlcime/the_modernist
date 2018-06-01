@@ -8,10 +8,18 @@
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {
-    "node-sass": "^4.9.0"
+    "autoprefixer": "^8.5.2",
+    "concat": "^1.0.3",
+    "node-sass": "^4.9.0",
+    "postcss-cli": "^5.0.0",
+    "run-all": "^1.0.1"
   },
   "scripts": {
-    "build": "node-sass sass/_main.scss css/main.css"
+    "convert": "node-sass sass/_main.scss css/main.css",
+    "concat": "concat -o css/main.css  css/fonts.css css/basic-fonts.css css/main.css",
+    "prefix": "postcss --use autoprefixer -b 'last 10 versions' css/main.css -o css/main.prefix.css",
+    "compress": "node-sass  css/main.prefix.css css/main.min.css --output-style compressed",
+    "build":"npm-run-all covert concat prefix compress"
   },
   "repository": {
     "type": "git",
